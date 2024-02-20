@@ -1,0 +1,45 @@
+ITM 2
+00011100
+00100010
+01001001
+01001001
+01001001
+01001001
+00100010
+00011100
+>
+00111000
+01000100
+10010010
+10010010
+10010010
+10010010
+01000100
+00111000
+NAME coin
+DLG 3
+
+
+DLG 3
+"""
+You've found some gold!
+Let's find some more.{
+  - {item "2"} >= 4 ?
+    {pg}That's enough treasure for now...
+    Time to return home.
+}
+"""
+NAME coin dialog
+
+
+DLG 4
+"""
+{
+  - {item "2"} >= 5 ?
+    {property locked false}You return home with all your new-found riches!
+    {wvy}Congratulations!{/wvy}
+  - else ?
+    {property locked true}You don't have enough treasure to return home yet...
+}
+"""
+NAME ending
