@@ -1,0 +1,22 @@
+ITM 2
+00000000
+01011010
+00111100
+01111110
+01111110
+00111100
+01011010
+00000000
+NAME bomb
+DLG 2
+
+DLG 2
+"""
+{shk}AHH I'VE HIT A BOMB.{/shk}{pg}{
+  - {item "bomb"} < 4 ?
+    Continue finding more treasure
+  - else ?
+    DEAD{end}
+}
+"""
+NAME bomb dialog
