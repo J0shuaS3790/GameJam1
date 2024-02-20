@@ -1,4 +1,4 @@
-ITM 2
+ITM 3
 00000000
 01011010
 00111100
@@ -8,9 +8,9 @@ ITM 2
 01011010
 00000000
 NAME bomb
-DLG 2
+DLG 6
 
-DLG 2
+DLG 6
 """
 {shk}AHH I'VE HIT A BOMB.{/shk}{pg}{
   - {item "bomb"} < 4 ?
