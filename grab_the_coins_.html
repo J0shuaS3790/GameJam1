@@ -82,7 +82,6 @@ l,0,0,0,0,j,0,0,0,0,0,0,0,0,0,0
 l,0,0,0,0,j,0,0,0,0,0,0,h,0,0,0
 l,0,0,0,0,11,0,0,0,0,0,g,g,0,0,0
 n,a,a,a,a,b,b,a,a,a,a,b,b,a,a,a
-EXT 1,0 0 1,0
 PAL 0
 
 ROOM 2
@@ -571,18 +570,13 @@ NAME key dialog
 
 DLG 3
 """
-You've found some gold!
-Let's find some more.{
+{score = score + 100}*Picked up £100 worth of treasure*{pg}*You now have £{say score} of treasure in your pockets*{
   - {item "2"} >= 4 ?
     {pg}That's enough treasure for now...
     Time to return home.
 }
 """
-NAME coin dialog
-
-DLG 5
-The end
-NAME ending 1
+NAME coin_pickup
 
 DLG 6
 """
@@ -598,17 +592,20 @@ NAME bomb dialog
 DLG 7
 """
 {
-  - {item "2"} >= 5 ?
+  - score >= 500 ?
     {property locked false}You return home with all your new-found riches!
     {wvy}Congratulations!{/wvy}
   - else ?
     {property locked true}You don't have enough treasure to return home yet...
 }
 """
-NAME ending
+NAME lvl_1_end
 
 VAR a
 42
+
+VAR score
+0
 
 TUNE 1
 3d,0,0,0,3d5,0,0,0,3l,0,0,0,3s,0,0,0
