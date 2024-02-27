@@ -261,10 +261,25 @@ DLG 8
 DLG 8
 """
 {
-  - {item "4"} == 60 ?
-    {shk}YOU'VE RAN OUT OF OXYGEN{/shk}{end}{pg}END OF GAME
+  - {item "4"} <= 40 ?
+    {
+      - {item "4"} == 5 ?
+        {wvy}You've 35 seconds of oxygen left.{/wvy}
+      - {item "4"} == 10 ?
+        {wvy}You've used 30 seconds of oxygen left.{/wvy}
+      - {item "4"} == 15 ?
+        {wvy}You've used 25 seconds of oxygen left.{/wvy}
+      - {item "4"} == 20 ?
+        {wvy}You've used 20 seconds of oxygen left.{/wvy}
+      - {item "4"} == 25 ?
+        {wvy}You've used 15 seconds of oxygen left.{/wvy}
+      - {item "4"} == 30 ?
+        {wvy}You've used 10 seconds of oxygen left.{/wvy}
+      - {item "4"} == 35 ?
+         {wvy}You've used 5 seconds of oxygen left.{/wvy}
+    }
   - else ?
-    You have used {say {item "4"}} turn.
+    {shk}YOU'VE RAN OUT OF OXYGEN{/shk}{end}{pg}END GAME
 }
 """
 NAME InvisableTurn dialog
