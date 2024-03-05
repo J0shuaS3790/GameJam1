@@ -1,0 +1,4 @@
+{drws "Crab"} Scuba Sam {drws "Crab"}{pg}I Scuba Sam am on a journey to riches help me collect treasure and avoid bombs. To fulfil my very noble goals.
+
+You head home after a hard day's work...
+    {rbw}{wvy}Congratulations! You've fulfilled Sam's goals in life{/wvy}{/rbw}
