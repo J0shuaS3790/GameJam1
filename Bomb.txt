@@ -12,8 +12,11 @@ DLG 6
 
 DLG 6
 """
-{shk}AHH I'VE HIT A BOMB.{/shk}{pg}{
-  - {item "bomb"} < 4 ?
+{
+  - {item "[lvl3]4"} == 2 ?
+    {end}
+}{shk}AHH I'VE HIT A BOMB.{/shk}{pg}{
+  - {item "bomb"} < 1 ?
     Continue finding more treasure
   - else ?
     DEAD{end}
