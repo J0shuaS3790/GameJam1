@@ -1,0 +1,37 @@
+ROOM [lvl3]3
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,i,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,j,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,e,j,0,0,0,0,0
+0,0,i,0,0,0,0,0,0,g,f,0,0,[lvl3]13,b,b
+[lvl3]12,0,j,0,0,0,0,e,0,g,g,0,[lvl3]13,b,b,b
+b,n,[lvl3]12,e,f,0,0,g,0,g,g,[lvl3]13,b,b,b,b
+b,b,b,b,b,a,b,b,a,b,b,b,b,b,b,b
+
+DLG 6
+"""
+{shk}AHH I'VE HIT A BOMB.{/shk}{pg}{
+  - {item "bomb"} < 1 ?
+    Continue finding more treasure
+  - else ?
+    DEAD{end}
+}
+"""
+NAME bomb dialog
+
+DLG [lvl3]9
+"""
+{
+  - score >= 0 ?
+    You head home after a long day...{pg}{exit "[lvl3]3" 11 1 "wave"}{score = 0}You have 40 turns to complete this dive.
+  - else ?
+    You need to collect £0 to be able to head home...
+}
