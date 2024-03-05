@@ -21,10 +21,7 @@ DLG 6
 
 DLG 6
 """
-{
-  - {item "[lvl3]4"} == 2 ?
-    {end}
-}{shk}AHH I'VE HIT A BOMB.{/shk}{pg}{
+{shk}AHH I'VE HIT A BOMB.{/shk}{pg}{
   - {item "bomb"} < 1 ?
     I don't think that I'll be able to withstand much more. But I need to find more treasure.
   - else ?
