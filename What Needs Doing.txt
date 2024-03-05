@@ -1,0 +1,26 @@
+Things to add:
+- Game name!!!
+- Change some Dialogue / add minor story (Beginning and end).
+- General sound effects.
+- Music.
+
+
+Issues:
+- Level 2: Chest disappears when picking up without the key, so you can't try again with the key.
+	Fix: Make the chest a sprite, so it does not disappear if you don't have the key.
+
+- Level 2: Exits to move between room 1 and 2 do not line up.
+
+- Level 3: Dialogue needs fixing.
+
+- All: Coin pickups trigger the "time to go" text in new levels.
+	Fix: Use the score variable instead of coin amount. / Reset coin amount in each level.
+
+
+Misc Improvements:
+- Add the "you still need £x to leave" in all levels.
+- Some decoration should be solid (i.e: the whale).
+- Some decoration should be changed to tiles (from sprites), so they can be reused (i.e: level 1 fishes).
+- Double check the invisible items in level 3, not sure if they're in every tile.
+- Make level 3 harder by lowering the number of "turns".
+- Change difficulty of bombs to make them more of a threat. (I.E: only one or two ends the game).
