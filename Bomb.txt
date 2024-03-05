@@ -26,9 +26,9 @@ DLG 6
     {end}
 }{shk}AHH I'VE HIT A BOMB.{/shk}{pg}{
   - {item "bomb"} < 1 ?
-    Continue finding more treasure
+    I don't think that I'll be able to withstand much more. But I need to find more treasure.
   - else ?
-    DEAD{end}
+    You've killed Sam by your own negligence{end}
 }
 """
 NAME bomb dialog
